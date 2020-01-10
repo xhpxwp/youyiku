@@ -1,0 +1,112 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ @charset "utf-8";
+ @import "compass/reset"; //编写自己的样式之前，有必要重置浏览器的默认样式。
+ @import "compass/css3"; //该模块提供19种CSS3命令
+ @import "compass/layout"; //该模块提供布局功能
+ @import "compass/typography"; //typography模块  该模块提供版式功能。
+ @import "compass/utilities"; //utilities模块 该模块提供某些不属于其他模块的功能。 
+ @import "compass";
+@import "compass/reset";
+$page_width:1282px;
+$page_container:100%;
+
+%box {
+    width: $page_width;
+   
+    margin: 0 auto;
+}
+
+#top {
+    @extend %box;
+    height:87px;
+    background:red;
+    margin:12px auto 23px
+}
+#gonggao{
+    @extend %box;
+    height:52px;
+    background:green;
+    margin:0 auto 10px
+  
+  }
+
+  #louti{
+    @extend %box;
+    height:82px;
+    background:orange;
+    
+  
+  }
+
+  .guanggao:nth-of-type(4){
+    @extend %box;
+    height:74px;
+    background:blue;
+    margin:26px auto 14px
+  }
+
+  #lunbo{
+    @extend %box;
+    height:567px;
+    background:yellow;
+    margin:14px auto 0px
+  }
+  .button{
+    @extend %box;
+    height:64px;
+    background:lightblue;
+    position: relative;
+    
+  }
+
+  .button {
+      ul{
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+        position: absolute;
+        width:80px;
+        height:10px;
+      }
+      li{
+        float:left;
+        width:10px;
+        height:10px;
+        background:#d1d1d1;
+        
+        margin-right:10px;
+        @include border-radius(5px); //调用混合--@mixin混合定义的  
+      
+    }
+  }
+  .guanggao:nth-of-type(7){
+    @extend %box;
+    height:162px;
+    background:blue;
+    margin-bottom:17px;
+  }
+  .guanggao:nth-of-type(8){
+    @extend %box;
+    height:205px;
+    background:blue;
+    margin-bottom:17px;
+  }
+  #rqbd{
+    @extend %box;
+    height:646px;
+    background:lightcoral;
+
+  }
+  #fllm{
+    @extend %box;
+    height:73px;
+    background:lightseagreen;
+    margin:54px auto
+    
+  }
+  
