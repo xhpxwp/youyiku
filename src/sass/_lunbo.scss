@@ -1,0 +1,67 @@
+// /*****这是轮播图的样式*****
+#lunbo{
+    @extend %box;
+    height:567px;
+   
+    margin:14px auto 0px;
+  
+
+    ul{
+        overflow: hidden;
+        height:567px;
+    li{
+        width:1282px;
+        height:567px;
+        float:left
+        img{
+            width:100%;
+            height:567px;
+        }
+
+    }
+   
+       
+     
+        .prev-button{
+            width:10px;
+            height:50px;
+            background: url("https://img.alicdn.com/imgextra/i4/196993935/TB2x9r2cnAlyKJjSZPiXXXL2VXa-196993935.png") no-repeat 
+        };
+        .next-button{
+             width:10px;
+            height:50px;
+            background: url("https://img.alicdn.com/imgextra/i1/196993935/TB2Vxnfbo.iyKJjSspdXXbB_pXa-196993935.png") no-repeat 
+
+        }
+ 
+   
+
+    }
+  }
+/******这是轮播图按钮的样式********/ 
+  .button {
+    @extend %box;
+    height:64px;
+  
+    position: relative;
+      ul{
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+        position: absolute;
+        width:100px;
+        height:10px;
+      }
+      li{
+        float:left;
+        width:10px;
+        height:10px;
+        background:#d1d1d1;
+        
+        margin-right:10px;
+        @include border-radius(5px); //调用混合--@mixin混合定义的  
+      
+    }
+  }

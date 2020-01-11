@@ -10,6 +10,9 @@
  @import "compass/utilities"; //utilities模块 该模块提供某些不属于其他模块的功能。 
  @import "compass";
 @import "compass/reset";
+@import "top";
+@import "lunbo";
+@import "fllm";
 $page_width:1282px;
 $page_container:100%;
 
@@ -18,82 +21,90 @@ $page_container:100%;
    
     margin: 0 auto;
 }
-
-#top {
-    @extend %box;
-    height:87px;
-    background:red;
-    margin:12px auto 23px
-}
-#gonggao{
+/*这是公告的样式*/
+#gonggao1{
     @extend %box;
     height:52px;
-    background:green;
-    margin:0 auto 10px
-  
-  }
-
+    background:#fe0000;
+    margin:27px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    
+      .nextbutton{
+      width:62px;
+        height:52px;
+       background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_next.png") no-repeat 
+      }
+      .prevbutton{
+        width:62px;
+          height:52px;
+         background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_prev.png") no-repeat 
+        }
+     
+    ul{
+      overflow: hidden;
+      height:52px;
+      width:1158px;
+     
+      li{
+        background:#fe0000;
+        width:1158px;
+        height:52px;
+           font-size:20px;
+           color:white;
+        float:left;  
+      }
+      }
+    }
+/**********这是楼梯的样式********/ 
   #louti{
     @extend %box;
     height:82px;
-    background:orange;
+    background:#a91523;
+    ul{
+      display:flex;
+      height:82px;
+      justify-content: space-evenly;
+     
+      li{
+        
+        color:#ffe699;
+        line-height:38px;
+        font-size:20px;
+        padding:18px;
+       
+      }
+    }
     
   
   }
-
-  .guanggao:nth-of-type(4){
+/**********这是广告的样式***********/ 
+  .guanggao1{
     @extend %box;
     height:74px;
-    background:blue;
+   img{
+     width:100%;
+     height:100%
+   }
     margin:26px auto 14px
   }
-
-  #lunbo{
-    @extend %box;
-    height:567px;
-    background:yellow;
-    margin:14px auto 0px
-  }
-  .button{
-    @extend %box;
-    height:64px;
-    background:lightblue;
-    position: relative;
-    
-  }
-
-  .button {
-      ul{
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-        margin:auto;
-        position: absolute;
-        width:80px;
-        height:10px;
-      }
-      li{
-        float:left;
-        width:10px;
-        height:10px;
-        background:#d1d1d1;
-        
-        margin-right:10px;
-        @include border-radius(5px); //调用混合--@mixin混合定义的  
-      
-    }
-  }
-  .guanggao:nth-of-type(7){
+/******这是广告的样式*******/ 
+  .guanggao2{
     @extend %box;
     height:162px;
-    background:blue;
+    img{
+      width:100%;
+      height:100%
+    }
     margin-bottom:17px;
   }
-  .guanggao:nth-of-type(8){
+  .guanggao3{
     @extend %box;
     height:205px;
-    background:blue;
+    img{
+      width:100%;
+      height:100%
+    }
     margin-bottom:17px;
   }
   #rqbd{
@@ -102,11 +113,168 @@ $page_container:100%;
     background:lightcoral;
 
   }
-  #fllm{
+
+
+  #tj{
     @extend %box;
-    height:73px;
-    background:lightseagreen;
-    margin:54px auto
+    height:639px;
+ 
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    img{
+      width:100%;
+      height:578px;
+
+    }
+   
     
   }
+
+  #nzktj{
+    @extend %box;
+    height:997px;
+ 
+    margin-top:30px;
+   
+    .nzkimg1{
+      width:100%;
+      height:433px;
+      margin-bottom:40px; 
+  }
+  .nzkimg2{
+    width:100%;
+    height:520px;
+  }
+}
+  #rqsp{
+    @extend %box;
+    height:1182px;
+    
+    margin-top:60px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    .rqspimg1{
+      width:100%;
+      height:578px;
+      margin-bottom:30px;
+
+    }
+    .rqspimg2{
+      width:100%;
+      height:512px;
+    }
+  }
   
+  #xsty{
+    @extend %box;
+    height:1182px;
+    margin-top:60px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    .xstyimg1{
+      width:100%;
+      height:578px;
+      margin-bottom:30px;
+
+    }
+    .xstyimg2{
+      width:100%;
+      height:512px;
+    }
+  }
+  .guanggao4{
+    @extend %box;
+    height:202px;
+    img{
+      width:100%;
+      height:100%
+    }
+    margin:38px auto 63px;
+  }
+  #rmsp{
+    @extend %box;
+    height:963px;
+  
+    margin-top:67px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    ul{
+      widows: 100%;
+      display:flex;
+      margin-bottom:30px;
+    }
+    li{
+      width:25%;
+      text-align: center;
+      border-bottom:1px solid #ababab;
+      line-height:78px;
+      a{
+        text-decoration: none;
+        color:#ababab
+      }
+      a:active{
+       
+        color:black
+      }
+    a:hover{
+      color:black
+    }
+    }
+    
+  }
+  #tjyl{
+    @extend %box;
+    height:1144px;
+    background:lightslategrey;
+    margin-top:67px
+    
+  }
+  #hz{
+    @extend %box;
+    height:1144px;
+    background:lightslategrey;
+    margin-top:80px
+    
+  }
+
+  #utxl{
+    @extend %box;
+    height:1214px;
+    background:lightslategrey;
+    margin-top:64px
+    
+  }
+  #fw{
+    @extend %box;
+    height:665px;
+    background:lightslategrey;
+    margin-top:55px
+    
+  }
+
+  #daogou{
+    @extend %box;
+    height:479px;
+    background:lightslategrey;
+    margin-top:80px
+    
+  }
+  #footer{
+    @extend %box;
+    height:176px;
+    background:lightslategrey;
+    margin-top:24px
+    
+  }
