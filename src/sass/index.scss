@@ -33,12 +33,12 @@ $page_container:100%;
       .nextbutton{
       width:62px;
         height:52px;
-       background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_next.png") no-repeat 
+       background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_next.png") no-repeat  center center
       }
       .prevbutton{
         width:62px;
           height:52px;
-         background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_prev.png") no-repeat 
+         background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_prev.png") no-repeat center center
         }
      
     ul{
@@ -68,10 +68,14 @@ $page_container:100%;
      
       li{
         
-        color:#ffe699;
+        
         line-height:38px;
         font-size:20px;
         padding:18px;
+        a{
+          color:#ffe699;
+          text-decoration: none;
+        }
        
       }
     }
@@ -98,6 +102,7 @@ $page_container:100%;
     }
     margin-bottom:17px;
   }
+  /******这是广告的样式*******/ 
   .guanggao3{
     @extend %box;
     height:205px;
@@ -107,14 +112,94 @@ $page_container:100%;
     }
     margin-bottom:17px;
   }
+
+  /*******这是人气榜单的样式*******/
   #rqbd{
     @extend %box;
     height:646px;
     background:lightcoral;
-
+    position:relative;
+    ul{
+      width:878px;
+      display:flex;
+      justify-content: space-between;
+      left:131px;
+      top:111px;
+      position: absolute;
+      li{
+        margin-right:40px;
+        a{
+          display: inline-block;
+         width:100px;
+         height:30px;
+          font-size:24px;
+          text-decoration: none;
+          color:black;
+          text-align:center;
+          
+        }
+        a:hover{
+          border-radius: 10%;
+          color:white;
+          background-color: blue;
+        }
+        a:before{
+          content: "";
+    position: absolute;
+    left: -54px;
+    top: -8px;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://img.alicdn.com/imgextra/i2/196993935/O1CN01pUmIvI1ewH6As5eFD_!!196993935.png")
+        }
+      }
+    
+    }
+    .rqbdimg1{
+      height: 642px;
+       a{
+        display:inline-block;
+        width:100%;
+        height:100%;
+       }
+     }
+    .rqbdimg2{
+      height: 642px;
+       a{
+        display:inline-block;
+        width:100%;
+        height:100%;
+        img{
+          display:none;
+        }
+     }
+    }
+     .rqbdimg3{
+      height: 642px;
+       a{
+        display:inline-block;
+        width:100%;
+        height:100%;
+        img{
+          display:none;
+        }
+     }
+     
+      }
+      .rqbdimg4{
+        height: 642px;
+         a{
+          display:inline-block;
+          width:100%;
+          height:100%;
+          img{
+            display:none;
+          }
+       }
+      }
   }
 
-
+  /*******这是本周推荐的样式*******/
   #tj{
     @extend %box;
     height:639px;
@@ -132,7 +217,7 @@ $page_container:100%;
    
     
   }
-
+  /*******这是牛仔裤推荐的样式*******/
   #nzktj{
     @extend %box;
     height:997px;
@@ -149,6 +234,7 @@ $page_container:100%;
     height:520px;
   }
 }
+  /*******这是人气商品的样式*******/
   #rqsp{
     @extend %box;
     height:1182px;
@@ -170,7 +256,7 @@ $page_container:100%;
       height:512px;
     }
   }
-  
+    /*******这是限时特优的样式*******/
   #xsty{
     @extend %box;
     height:1182px;
@@ -191,6 +277,7 @@ $page_container:100%;
       height:512px;
     }
   }
+    /*******这是广告的样式*******/
   .guanggao4{
     @extend %box;
     height:202px;
@@ -200,21 +287,166 @@ $page_container:100%;
     }
     margin:38px auto 63px;
   }
+
+    /*******这是热门商品分类的样式*******/
   #rmsp{
     @extend %box;
     height:963px;
   
+    margin-top:67px;
+
+    p{
+      font-size:30px;
+      font-weight:bold;
+   
+    }
+    ul{
+      width: 100%;
+      display:flex;
+      margin-bottom:30px;
+      li{
+        width:25%;
+        text-align: center;
+        border-bottom:1px solid #ababab;
+        line-height:78px;
+        a{
+          text-decoration: none;
+          color:#ababab;
+          font-weight:bold;
+       
+        }
+      
+      a:hover{
+        color:black
+      }
+    }
+  }
+  .rmspimg1{
+    height: 828px;
+     a{
+      display:inline-block;
+      width:100%;
+      height:100%;
+     
+     
+   }
+    
+   
+    }
+   .rmspimg2{
+    height: 828px;
+     a{
+      display:inline-block;
+      width:100%;
+      height:100%;
+      img{
+        display:none;
+      }
+   }
+    
+   
+    }
+    .rmspimg3{
+      height: 828px;
+       a{
+        display:inline-block;
+        width:100%;
+        height:100%;
+        img{
+          display:none;
+        }
+     }
+    }
+     .rmspimg4{
+      height: 828px;
+       a{
+        display:inline-block;
+        width:100%;
+        height:100%;
+        img{
+          display:none;
+        }
+     }
+    
+    
+  }
+}
+    /*******这是穿搭推荐的样式*******/
+  #cdtj{
+    @extend %box;
+ 
     margin-top:67px;
     p{
       font-size:30px;
       font-weight:bold;
       margin-bottom:30px;
     }
-    ul{
-      widows: 100%;
-      display:flex;
+    
+  }
+   /*******这是特辑一览的样式*******/
+   #tjyl{
+    @extend %box;
+ 
+    margin-top:67px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    };
+    .tjylimg1{
       margin-bottom:30px;
     }
+  }
+    /*******这是合作系列的样式*******/
+  #hz{
+    @extend %box;
+    height:1144px;
+
+    margin-top:80px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    };
+    .hzimg1{
+   
+      margin-bottom:30px;
+
+    }
+    
+  }
+  /*******这是ut系列的样式*******/
+  #utxl{
+    @extend %box;
+    height:1214px;
+     
+    margin-top:64px;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    .utimg1{
+   
+      margin-bottom:30px;
+
+    }
+    
+  }
+ /*******这是热销排行的样式*******/
+ #rxph{
+  @extend %box;
+  margin-top:67px;
+  height:561px;
+  p{
+    font-size:30px;
+    font-weight:bold;
+ 
+  }
+  ul{
+    widows: 100%;
+    display:flex;
+    margin-bottom:30px;
     li{
       width:25%;
       text-align: center;
@@ -222,59 +454,167 @@ $page_container:100%;
       line-height:78px;
       a{
         text-decoration: none;
-        color:#ababab
+        color:#ababab;
+        font-weight:bold;
+     
       }
-      a:active{
-       
-        color:black
-      }
+    
     a:hover{
       color:black
     }
-    }
-    
   }
-  #tjyl{
-    @extend %box;
-    height:1144px;
-    background:lightslategrey;
-    margin-top:67px
-    
-  }
-  #hz{
-    @extend %box;
-    height:1144px;
-    background:lightslategrey;
-    margin-top:80px
-    
   }
 
-  #utxl{
-    @extend %box;
-    height:1214px;
-    background:lightslategrey;
-    margin-top:64px
-    
+  .rxphimg1{
+    height:422px;
+    a{
+      display:inline-block;
+      height:100%;
+      width:100%;
+      
+    }
+   
   }
+  .rxphimg2{
+    height:422px;
+    a{
+      display:inline-block;
+      height:100%;
+      width:100%;
+      img{
+        display: none;
+      }
+    }
+   
+  }
+  .rxphimg3{
+    height:422px;
+    a{
+      display:inline-block;
+      height:100%;
+      width:100%;
+      img{
+        display: none;
+      }
+    }
+   
+  }
+  .rxphimg4{
+    height:422px;
+    a{
+      display:inline-block;
+      height:100%;
+      width:100%;
+      img{
+        display: none;
+      }
+    }
+   
+  }
+  }
+  
+
+/*******这是便利服务的样式*******/ 
   #fw{
     @extend %box;
-    height:665px;
-    background:lightslategrey;
-    margin-top:55px
-    
+    height:728px;
+    margin-top:60px;
+    display:flex;
+    flex-direction: column;
+    p{
+      font-size:30px;
+      font-weight:bold;
+      margin-bottom:30px;
+    };
+    .tips{
+      margin-top:100px;
+      text-align:center;
+      border-bottom:1px solid #ababab;
+      padding-bottom:30px ;
+      
+      h3{
+        font-weight:bold;
+        margin-bottom:15px;
+      }
+      h4 a{
+        color:black
+      }
+    }
   }
-
+/******这是导购的样式******/ 
   #daogou{
     @extend %box;
     height:479px;
     background:lightslategrey;
-    margin-top:80px
+    margin-top:78px
     
   }
+  /******这是尾部的样式******/ 
   #footer{
     @extend %box;
     height:176px;
-    background:lightslategrey;
-    margin-top:24px
+
+    margin-top:24px;
+
+   
+    .footer-nav{
+      width:100%;
+      height:52px;
+      display:flex;
+      margin-bottom:20px;
+      background-color: black;
+      img{
+        width:52px;
+        height:52px;
+      }
+      .footer-leftnav{
+        display:flex;
+        height:52px;
+        span{
+          width:0px;
+          height:24px;
+          border-right:1px dotted  white;
+          margin:14px 0
+
+        }
+        h3{
+          padding:17px 120px 17px 120px;
+          a{
+            font-size:12px;
+        color:white;
+        text-decoration: none;
     
+          }
+        }
+      }
+     
+    } 
+
+    .footeritem{
+      display:flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      a{
+        font-size:14px;
+        color:#ababab;
+        text-decoration: none;
+      }
+    
+    }
   }
+
+  /******这是回到顶部的样式******/ 
+  #topbutton{
+    width:50px;
+    font-size:12px;
+    height:12px;
+    background:white;
+    color:black;
+    position:absolute;
+    right:0;
+    bottom:100px;
+    border:1px solid #ababab;
+    text-align: center;
+    padding:19px 0
+  }
+  

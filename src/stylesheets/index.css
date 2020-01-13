@@ -116,20 +116,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .top-item {
   display: flex;
   margin-top: 13px;
+  justify-content: space-between;
 }
-/* line 54, ../sass/_top.scss */
+/* line 55, ../sass/_top.scss */
 .top-item img {
   justify-content: space-between;
   width: 52px;
   height: 52px;
 }
-/* line 60, ../sass/_top.scss */
+/* line 61, ../sass/_top.scss */
 .top-item .leftul {
   justify-content: space-between;
   display: flex;
   padding: 17px 0;
 }
-/* line 64, ../sass/_top.scss */
+/* line 65, ../sass/_top.scss */
 .top-item .leftul li {
   height: 23px;
   border-right: 1px dotted #ababab;
@@ -137,47 +138,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 23px;
   font-weight: bold;
 }
-/* line 72, ../sass/_top.scss */
+/* line 74, ../sass/_top.scss */
 .top-item .leftul li a {
   color: black;
   text-decoration: none;
+  border-right: 1px dotted white;
+  font-size: 12px;
 }
-/* line 78, ../sass/_top.scss */
+/* line 82, ../sass/_top.scss */
 .top-item .leftul li a:hover {
   color: red;
 }
-/* line 83, ../sass/_top.scss */
+/* line 87, ../sass/_top.scss */
 .top-item .leftul li:nth-of-type(4) {
   border: 0;
 }
-/* line 88, ../sass/_top.scss */
+/* line 92, ../sass/_top.scss */
 .top-item .rightul {
   margin-left: 40px;
   display: flex;
-  justify-content: space-evenly;
 }
-/* line 93, ../sass/_top.scss */
+/* line 97, ../sass/_top.scss */
 .top-item .rightul li {
   background: #a1a1a1;
-  padding: 0 20px;
-  font-size: 14px;
+  padding: 0 18px;
+  font-size: 12px;
   font-weight: bold;
   line-height: 50px;
 }
-/* line 104, ../sass/_top.scss */
+/* line 107, ../sass/_top.scss */
+.top-item .rightul li span {
+  width: 0px;
+  height: 30px;
+  margin-left: 20px;
+  border-right: 1px dotted white;
+}
+/* line 114, ../sass/_top.scss */
 .top-item .rightul li a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
 }
-/* line 108, ../sass/_top.scss */
+/* line 120, ../sass/_top.scss */
 .top-item .rightul li a:hover {
   color: red;
 }
-/* line 113, ../sass/_top.scss */
+/* line 125, ../sass/_top.scss */
 .top-item .rightul li:nth-of-type(5) {
   background: #666666;
 }
-/* line 116, ../sass/_top.scss */
+/* line 128, ../sass/_top.scss */
 .top-item .rightul li:nth-of-type(6) {
   background: #3c3c3c;
 }
@@ -185,6 +195,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 2, ../sass/_lunbo.scss */
 #lunbo {
   height: 567px;
+  position: relative;
   margin: 14px auto 0px;
 }
 /* line 9, ../sass/_lunbo.scss */
@@ -204,25 +215,31 @@ img {
   height: 567px;
 }
 /* line 25, ../sass/_lunbo.scss */
-#lunbo ul .prev-button {
+#lunbo .prev-button {
+  position: absolute;
+  left: -23px;
+  top: 239px;
   width: 10px;
   height: 50px;
   background: url("https://img.alicdn.com/imgextra/i4/196993935/TB2x9r2cnAlyKJjSZPiXXXL2VXa-196993935.png") no-repeat;
 }
-/* line 30, ../sass/_lunbo.scss */
-#lunbo ul .next-button {
+/* line 33, ../sass/_lunbo.scss */
+#lunbo .next-button {
+  position: absolute;
+  right: -13px;
+  top: 239px;
   width: 10px;
   height: 50px;
   background: url("https://img.alicdn.com/imgextra/i1/196993935/TB2Vxnfbo.iyKJjSspdXXbB_pXa-196993935.png") no-repeat;
 }
 
 /******这是轮播图按钮的样式********/
-/* line 42, ../sass/_lunbo.scss */
+/* line 48, ../sass/_lunbo.scss */
 .button {
   height: 64px;
   position: relative;
 }
-/* line 47, ../sass/_lunbo.scss */
+/* line 53, ../sass/_lunbo.scss */
 .button ul {
   left: 0;
   right: 0;
@@ -233,7 +250,7 @@ img {
   width: 100px;
   height: 10px;
 }
-/* line 57, ../sass/_lunbo.scss */
+/* line 63, ../sass/_lunbo.scss */
 .button li {
   float: left;
   width: 10px;
@@ -267,28 +284,31 @@ img {
   margin-bottom: 30px;
   border-right: 1px solid #ababab;
 }
-/* line 19, ../sass/_fllm.scss */
+/* line 20, ../sass/_fllm.scss */
 #fllm li p:nth-of-type(2) {
   font-size: 14px;
   text-align: center;
 }
-/* line 24, ../sass/_fllm.scss */
+/* line 25, ../sass/_fllm.scss */
 #fllm li p:nth-of-type(2) a {
   display: inline-block;
   margin-right: 20px;
   color: black;
+  text-decoration: none;
+  padding: 5px 0;
+  border-bottom: 2px solid #dadada;
 }
-/* line 30, ../sass/_fllm.scss */
+/* line 34, ../sass/_fllm.scss */
 #fllm li p:nth-of-type(2) a:hover {
   color: green;
 }
-/* line 34, ../sass/_fllm.scss */
+/* line 38, ../sass/_fllm.scss */
 #fllm li p:nth-of-type(2) li:nth-of-type(4) p:nth-of-type(1) {
   border: none;
 }
 
 /* line 19, ../sass/index.scss */
-#top, #lunbo, .button, #gonggao1, #louti, .guanggao1, .guanggao2, .guanggao3, #rqbd, #tj, #nzktj, #rqsp, #xsty, .guanggao4, #rmsp, #tjyl, #hz, #utxl, #fw, #daogou, #footer {
+#top, #lunbo, .button, #gonggao1, #louti, .guanggao1, .guanggao2, .guanggao3, #rqbd, #tj, #nzktj, #rqsp, #xsty, .guanggao4, #rmsp, #cdtj, #tjyl, #hz, #utxl, #rxph, #fw, #daogou, #footer {
   width: 1282px;
   margin: 0 auto;
 }
@@ -306,13 +326,13 @@ img {
 #gonggao1 .nextbutton {
   width: 62px;
   height: 52px;
-  background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_next.png") no-repeat;
+  background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_next.png") no-repeat center center;
 }
 /* line 38, ../sass/index.scss */
 #gonggao1 .prevbutton {
   width: 62px;
   height: 52px;
-  background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_prev.png") no-repeat;
+  background: url("https://www.uniqlo.cn/public/image/L1/2019/common/notice_prev.png") no-repeat center center;
 }
 /* line 44, ../sass/index.scss */
 #gonggao1 ul {
@@ -344,219 +364,587 @@ img {
 }
 /* line 69, ../sass/index.scss */
 #louti ul li {
-  color: #ffe699;
   line-height: 38px;
   font-size: 20px;
   padding: 18px;
 }
+/* line 75, ../sass/index.scss */
+#louti ul li a {
+  color: #ffe699;
+  text-decoration: none;
+}
 
 /**********这是广告的样式***********/
-/* line 82, ../sass/index.scss */
+/* line 86, ../sass/index.scss */
 .guanggao1 {
   height: 74px;
   margin: 26px auto 14px;
 }
-/* line 85, ../sass/index.scss */
+/* line 89, ../sass/index.scss */
 .guanggao1 img {
   width: 100%;
   height: 100%;
 }
 
 /******这是广告的样式*******/
-/* line 92, ../sass/index.scss */
+/* line 96, ../sass/index.scss */
 .guanggao2 {
   height: 162px;
   margin-bottom: 17px;
 }
-/* line 95, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 .guanggao2 img {
   width: 100%;
   height: 100%;
 }
 
-/* line 101, ../sass/index.scss */
+/******这是广告的样式*******/
+/* line 106, ../sass/index.scss */
 .guanggao3 {
   height: 205px;
   margin-bottom: 17px;
 }
-/* line 104, ../sass/index.scss */
+/* line 109, ../sass/index.scss */
 .guanggao3 img {
   width: 100%;
   height: 100%;
 }
 
-/* line 110, ../sass/index.scss */
+/*******这是人气榜单的样式*******/
+/* line 117, ../sass/index.scss */
 #rqbd {
   height: 646px;
   background: lightcoral;
+  position: relative;
+}
+/* line 122, ../sass/index.scss */
+#rqbd ul {
+  width: 878px;
+  display: flex;
+  justify-content: space-between;
+  left: 131px;
+  top: 111px;
+  position: absolute;
+}
+/* line 129, ../sass/index.scss */
+#rqbd ul li {
+  margin-right: 40px;
+}
+/* line 131, ../sass/index.scss */
+#rqbd ul li a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+/* line 141, ../sass/index.scss */
+#rqbd ul li a:hover {
+  border-radius: 10%;
+  color: white;
+  background-color: blue;
+}
+/* line 146, ../sass/index.scss */
+#rqbd ul li a:before {
+  content: "";
+  position: absolute;
+  left: -54px;
+  top: -8px;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://img.alicdn.com/imgextra/i2/196993935/O1CN01pUmIvI1ewH6As5eFD_!!196993935.png");
+}
+/* line 158, ../sass/index.scss */
+#rqbd .rqbdimg1 {
+  height: 642px;
+}
+/* line 160, ../sass/index.scss */
+#rqbd .rqbdimg1 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 166, ../sass/index.scss */
+#rqbd .rqbdimg2 {
+  height: 642px;
+}
+/* line 168, ../sass/index.scss */
+#rqbd .rqbdimg2 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 172, ../sass/index.scss */
+#rqbd .rqbdimg2 a img {
+  display: none;
+}
+/* line 177, ../sass/index.scss */
+#rqbd .rqbdimg3 {
+  height: 642px;
+}
+/* line 179, ../sass/index.scss */
+#rqbd .rqbdimg3 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 183, ../sass/index.scss */
+#rqbd .rqbdimg3 a img {
+  display: none;
+}
+/* line 189, ../sass/index.scss */
+#rqbd .rqbdimg4 {
+  height: 642px;
+}
+/* line 191, ../sass/index.scss */
+#rqbd .rqbdimg4 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 195, ../sass/index.scss */
+#rqbd .rqbdimg4 a img {
+  display: none;
 }
 
-/* line 118, ../sass/index.scss */
+/*******这是本周推荐的样式*******/
+/* line 203, ../sass/index.scss */
 #tj {
   height: 639px;
 }
-/* line 122, ../sass/index.scss */
+/* line 207, ../sass/index.scss */
 #tj p {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-/* line 127, ../sass/index.scss */
+/* line 212, ../sass/index.scss */
 #tj img {
   width: 100%;
   height: 578px;
 }
 
-/* line 136, ../sass/index.scss */
+/*******这是牛仔裤推荐的样式*******/
+/* line 221, ../sass/index.scss */
 #nzktj {
   height: 997px;
   margin-top: 30px;
 }
-/* line 142, ../sass/index.scss */
+/* line 227, ../sass/index.scss */
 #nzktj .nzkimg1 {
   width: 100%;
   height: 433px;
   margin-bottom: 40px;
 }
-/* line 147, ../sass/index.scss */
+/* line 232, ../sass/index.scss */
 #nzktj .nzkimg2 {
   width: 100%;
   height: 520px;
 }
 
-/* line 152, ../sass/index.scss */
+/*******这是人气商品的样式*******/
+/* line 238, ../sass/index.scss */
 #rqsp {
   height: 1182px;
   margin-top: 60px;
 }
-/* line 157, ../sass/index.scss */
+/* line 243, ../sass/index.scss */
 #rqsp p {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-/* line 162, ../sass/index.scss */
+/* line 248, ../sass/index.scss */
 #rqsp .rqspimg1 {
   width: 100%;
   height: 578px;
   margin-bottom: 30px;
 }
-/* line 168, ../sass/index.scss */
+/* line 254, ../sass/index.scss */
 #rqsp .rqspimg2 {
   width: 100%;
   height: 512px;
 }
 
-/* line 174, ../sass/index.scss */
+/*******这是限时特优的样式*******/
+/* line 260, ../sass/index.scss */
 #xsty {
   height: 1182px;
   margin-top: 60px;
 }
-/* line 178, ../sass/index.scss */
+/* line 264, ../sass/index.scss */
 #xsty p {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-/* line 183, ../sass/index.scss */
+/* line 269, ../sass/index.scss */
 #xsty .xstyimg1 {
   width: 100%;
   height: 578px;
   margin-bottom: 30px;
 }
-/* line 189, ../sass/index.scss */
+/* line 275, ../sass/index.scss */
 #xsty .xstyimg2 {
   width: 100%;
   height: 512px;
 }
 
-/* line 194, ../sass/index.scss */
+/*******这是广告的样式*******/
+/* line 281, ../sass/index.scss */
 .guanggao4 {
   height: 202px;
   margin: 38px auto 63px;
 }
-/* line 197, ../sass/index.scss */
+/* line 284, ../sass/index.scss */
 .guanggao4 img {
   width: 100%;
   height: 100%;
 }
 
-/* line 203, ../sass/index.scss */
+/*******这是热门商品分类的样式*******/
+/* line 292, ../sass/index.scss */
 #rmsp {
   height: 963px;
   margin-top: 67px;
 }
-/* line 208, ../sass/index.scss */
+/* line 298, ../sass/index.scss */
 #rmsp p {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 30px;
 }
-/* line 213, ../sass/index.scss */
+/* line 303, ../sass/index.scss */
 #rmsp ul {
-  widows: 100%;
+  width: 100%;
   display: flex;
   margin-bottom: 30px;
 }
-/* line 218, ../sass/index.scss */
-#rmsp li {
+/* line 307, ../sass/index.scss */
+#rmsp ul li {
   width: 25%;
   text-align: center;
   border-bottom: 1px solid #ababab;
   line-height: 78px;
 }
-/* line 223, ../sass/index.scss */
-#rmsp li a {
+/* line 312, ../sass/index.scss */
+#rmsp ul li a {
   text-decoration: none;
   color: #ababab;
+  font-weight: bold;
 }
-/* line 227, ../sass/index.scss */
-#rmsp li a:active {
+/* line 319, ../sass/index.scss */
+#rmsp ul li a:hover {
   color: black;
 }
-/* line 231, ../sass/index.scss */
-#rmsp li a:hover {
-  color: black;
+/* line 324, ../sass/index.scss */
+#rmsp .rmspimg1 {
+  height: 828px;
+}
+/* line 326, ../sass/index.scss */
+#rmsp .rmspimg1 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 336, ../sass/index.scss */
+#rmsp .rmspimg2 {
+  height: 828px;
+}
+/* line 338, ../sass/index.scss */
+#rmsp .rmspimg2 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 342, ../sass/index.scss */
+#rmsp .rmspimg2 a img {
+  display: none;
+}
+/* line 349, ../sass/index.scss */
+#rmsp .rmspimg3 {
+  height: 828px;
+}
+/* line 351, ../sass/index.scss */
+#rmsp .rmspimg3 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 355, ../sass/index.scss */
+#rmsp .rmspimg3 a img {
+  display: none;
+}
+/* line 360, ../sass/index.scss */
+#rmsp .rmspimg4 {
+  height: 828px;
+}
+/* line 362, ../sass/index.scss */
+#rmsp .rmspimg4 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 366, ../sass/index.scss */
+#rmsp .rmspimg4 a img {
+  display: none;
 }
 
-/* line 237, ../sass/index.scss */
-#tjyl {
-  height: 1144px;
-  background: lightslategrey;
+/*******这是穿搭推荐的样式*******/
+/* line 375, ../sass/index.scss */
+#cdtj {
   margin-top: 67px;
 }
+/* line 379, ../sass/index.scss */
+#cdtj p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-/* line 244, ../sass/index.scss */
+/*******这是特辑一览的样式*******/
+/* line 387, ../sass/index.scss */
+#tjyl {
+  margin-top: 67px;
+}
+/* line 391, ../sass/index.scss */
+#tjyl p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 396, ../sass/index.scss */
+#tjyl .tjylimg1 {
+  margin-bottom: 30px;
+}
+
+/*******这是合作系列的样式*******/
+/* line 401, ../sass/index.scss */
 #hz {
   height: 1144px;
-  background: lightslategrey;
   margin-top: 80px;
 }
+/* line 406, ../sass/index.scss */
+#hz p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 411, ../sass/index.scss */
+#hz .hzimg1 {
+  margin-bottom: 30px;
+}
 
-/* line 252, ../sass/index.scss */
+/*******这是ut系列的样式*******/
+/* line 419, ../sass/index.scss */
 #utxl {
   height: 1214px;
-  background: lightslategrey;
   margin-top: 64px;
 }
-
-/* line 259, ../sass/index.scss */
-#fw {
-  height: 665px;
-  background: lightslategrey;
-  margin-top: 55px;
+/* line 424, ../sass/index.scss */
+#utxl p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 429, ../sass/index.scss */
+#utxl .utimg1 {
+  margin-bottom: 30px;
 }
 
-/* line 267, ../sass/index.scss */
+/*******这是热销排行的样式*******/
+/* line 437, ../sass/index.scss */
+#rxph {
+  margin-top: 67px;
+  height: 561px;
+}
+/* line 441, ../sass/index.scss */
+#rxph p {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 446, ../sass/index.scss */
+#rxph ul {
+  widows: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+/* line 450, ../sass/index.scss */
+#rxph ul li {
+  width: 25%;
+  text-align: center;
+  border-bottom: 1px solid #ababab;
+  line-height: 78px;
+}
+/* line 455, ../sass/index.scss */
+#rxph ul li a {
+  text-decoration: none;
+  color: #ababab;
+  font-weight: bold;
+}
+/* line 462, ../sass/index.scss */
+#rxph ul li a:hover {
+  color: black;
+}
+/* line 468, ../sass/index.scss */
+#rxph .rxphimg1 {
+  height: 422px;
+}
+/* line 470, ../sass/index.scss */
+#rxph .rxphimg1 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+/* line 478, ../sass/index.scss */
+#rxph .rxphimg2 {
+  height: 422px;
+}
+/* line 480, ../sass/index.scss */
+#rxph .rxphimg2 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+/* line 484, ../sass/index.scss */
+#rxph .rxphimg2 a img {
+  display: none;
+}
+/* line 490, ../sass/index.scss */
+#rxph .rxphimg3 {
+  height: 422px;
+}
+/* line 492, ../sass/index.scss */
+#rxph .rxphimg3 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+/* line 496, ../sass/index.scss */
+#rxph .rxphimg3 a img {
+  display: none;
+}
+/* line 502, ../sass/index.scss */
+#rxph .rxphimg4 {
+  height: 422px;
+}
+/* line 504, ../sass/index.scss */
+#rxph .rxphimg4 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+/* line 508, ../sass/index.scss */
+#rxph .rxphimg4 a img {
+  display: none;
+}
+
+/*******这是便利服务的样式*******/
+/* line 518, ../sass/index.scss */
+#fw {
+  height: 728px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 524, ../sass/index.scss */
+#fw p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 529, ../sass/index.scss */
+#fw .tips {
+  margin-top: 100px;
+  text-align: center;
+  border-bottom: 1px solid #ababab;
+  padding-bottom: 30px;
+}
+/* line 535, ../sass/index.scss */
+#fw .tips h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 539, ../sass/index.scss */
+#fw .tips h4 a {
+  color: black;
+}
+
+/******这是导购的样式******/
+/* line 545, ../sass/index.scss */
 #daogou {
   height: 479px;
   background: lightslategrey;
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
-/* line 274, ../sass/index.scss */
+/******这是尾部的样式******/
+/* line 553, ../sass/index.scss */
 #footer {
   height: 176px;
-  background: lightslategrey;
   margin-top: 24px;
+}
+/* line 560, ../sass/index.scss */
+#footer .footer-nav {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: black;
+}
+/* line 566, ../sass/index.scss */
+#footer .footer-nav img {
+  width: 52px;
+  height: 52px;
+}
+/* line 570, ../sass/index.scss */
+#footer .footer-nav .footer-leftnav {
+  display: flex;
+  height: 52px;
+}
+/* line 573, ../sass/index.scss */
+#footer .footer-nav .footer-leftnav span {
+  width: 0px;
+  height: 24px;
+  border-right: 1px dotted  white;
+  margin: 14px 0;
+}
+/* line 580, ../sass/index.scss */
+#footer .footer-nav .footer-leftnav h3 {
+  padding: 17px 120px 17px 120px;
+}
+/* line 582, ../sass/index.scss */
+#footer .footer-nav .footer-leftnav h3 a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+/* line 593, ../sass/index.scss */
+#footer .footeritem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 597, ../sass/index.scss */
+#footer .footeritem a {
+  font-size: 14px;
+  color: #ababab;
+  text-decoration: none;
+}
+
+/******这是回到顶部的样式******/
+/* line 607, ../sass/index.scss */
+#topbutton {
+  width: 50px;
+  font-size: 12px;
+  height: 12px;
+  background: white;
+  color: black;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  border: 1px solid #ababab;
+  text-align: center;
+  padding: 19px 0;
 }

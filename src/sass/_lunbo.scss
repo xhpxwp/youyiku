@@ -2,7 +2,7 @@
 #lunbo{
     @extend %box;
     height:567px;
-   
+   position: relative;
     margin:14px auto 0px;
   
 
@@ -21,13 +21,19 @@
     }
    
        
-     
+  }
         .prev-button{
+          position:absolute;
+          left:-23px ;
+          top:239px;
             width:10px;
             height:50px;
             background: url("https://img.alicdn.com/imgextra/i4/196993935/TB2x9r2cnAlyKJjSZPiXXXL2VXa-196993935.png") no-repeat 
         };
         .next-button{
+          position:absolute;
+          right:-13px ;
+          top:239px;
              width:10px;
             height:50px;
             background: url("https://img.alicdn.com/imgextra/i1/196993935/TB2Vxnfbo.iyKJjSspdXXbB_pXa-196993935.png") no-repeat 
@@ -36,7 +42,7 @@
  
    
 
-    }
+   
   }
 /******这是轮播图按钮的样式********/ 
   .button {
