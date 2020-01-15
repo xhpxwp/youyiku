@@ -3,11 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
  @charset "utf-8";
- @import "compass/reset"; //编写自己的样式之前，有必要重置浏览器的默认样式。
- @import "compass/css3"; //该模块提供19种CSS3命令
- @import "compass/layout"; //该模块提供布局功能
- @import "compass/typography"; //typography模块  该模块提供版式功能。
- @import "compass/utilities"; //utilities模块 该模块提供某些不属于其他模块的功能。 
+ @import "compass/reset"; /***********编写自己的样式之前，有必要重置浏览器的默认样式。**************/
+ @import "compass/css3"; /***********该模块提供19种CSS3命令*********/
+ @import "compass/layout"; /*****该模块提供布局功能*****/
+ @import "compass/typography";  /*****typography模块 *****/
+ @import "compass/utilities"; /*******utilities模块 该模块提供某些不属于其他模块的功能。******/ 
  @import "compass";
 @import "compass/reset";
 @import "top";
@@ -44,15 +44,17 @@ $page_container:100%;
     ul{
       overflow: hidden;
       height:52px;
-      width:1158px;
+      width:3000px;
      
       li{
         background:#fe0000;
         width:1158px;
         height:52px;
-           font-size:20px;
-           color:white;
+        
         float:left;  
+        img{
+          width:1158px;
+        }
       }
       }
     }
@@ -61,6 +63,39 @@ $page_container:100%;
     @extend %box;
     height:82px;
     background:#a91523;
+
+		
+    ul{
+      display:flex;
+      height:82px;
+      justify-content: space-evenly;
+     
+      li{
+        
+        
+        line-height:38px;
+        font-size:20px;
+        padding:18px;
+        a{
+          color:#ffe699;
+          text-decoration: none;
+        }
+       
+      }
+    }
+    
+  
+  }
+  #louticopy{
+    @extend %box;
+    height:82px;
+    background:#a91523;
+    position:fixed;
+    top:-100px;
+    z-index:2;
+    margin-left:33px;
+
+		
     ul{
       display:flex;
       height:82px;
@@ -331,7 +366,7 @@ $page_container:100%;
      
    }
     
-   
+  
     }
    .rmspimg2{
     height: 828px;
@@ -339,9 +374,7 @@ $page_container:100%;
       display:inline-block;
       width:100%;
       height:100%;
-      img{
-        display:none;
-      }
+   
    }
     
    
@@ -352,9 +385,7 @@ $page_container:100%;
         display:inline-block;
         width:100%;
         height:100%;
-        img{
-          display:none;
-        }
+        
      }
     }
      .rmspimg4{
@@ -363,12 +394,13 @@ $page_container:100%;
         display:inline-block;
         width:100%;
         height:100%;
-        img{
-          display:none;
-        }
+      
      }
     
     
+  }
+  .active{
+    border-bottom:#378694 4px solid 
   }
 }
     /*******这是穿搭推荐的样式*******/
@@ -471,7 +503,9 @@ $page_container:100%;
       display:inline-block;
       height:100%;
       width:100%;
-      
+      img{
+        display: block;
+      }
     }
    
   }
@@ -511,6 +545,9 @@ $page_container:100%;
     }
    
   }
+  .active{
+    border-bottom:#378694 4px solid 
+  }
   }
   
 
@@ -544,8 +581,7 @@ $page_container:100%;
 /******这是导购的样式******/ 
   #daogou{
     @extend %box;
-    height:479px;
-    background:lightslategrey;
+
     margin-top:78px
     
   }
@@ -585,6 +621,9 @@ $page_container:100%;
         text-decoration: none;
     
           }
+          a:hover{
+        color:red
+          }
         }
       }
      
@@ -599,6 +638,7 @@ $page_container:100%;
         color:#ababab;
         text-decoration: none;
       }
+     
     
     }
   }
@@ -615,6 +655,7 @@ $page_container:100%;
     bottom:100px;
     border:1px solid #ababab;
     text-align: center;
-    padding:19px 0
+    padding:19px 0;
+    visibility: hidden;
   }
   

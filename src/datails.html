@@ -8,7 +8,9 @@
     <meta name="description" content="优衣库" />
     <meta name="keyword" content="优衣库" />
     <title>优衣库网络旗舰店</title>
-    <link rel="stylesheet" href="../src/stylesheets/login.css">
+    <link rel="stylesheet" href="../src/fonts/iconfont.css">
+    <link rel="stylesheet" href="../src/stylesheets/datails.css">
+   
 </head>
 
 <body>
@@ -49,64 +51,49 @@
             </ul>
         </div>
     </div>
-    <!-- 这是新用户注册的结构 -->
-    <div class="h-col ">
-        <h2>新用户注册</h2>
+
+    <!-- 这是详情的结构 -->
+    <div class="wrap">
+        <div id="spic">
+            <!-- 小图 -->
+            <img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other1/1000/2.jpg" alt="">
+            <div id="sf"></div>
+        </div>
+        <div id="bf">
+            <!-- 大图 -->
+            <img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other1/1000/2.jpg" alt="" id="bpic">
+        </div>
+        <div id="ulist">
+            <!-- 运动的列表 -->
+            
+          <span class="iconfont icon-shangjiantou
+                ">  <a href="javascript:;" ></a></span>
+            <div id="list">
+                <ul id="imglist">
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other1/1000/2.jpg" alt="" ></li>
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/first/1000/1.jpg" alt="" ></li>
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other2/1000/3.jpg" alt="" ></li>
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other3/1000/4.jpg" alt=""></li>
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/first/1000/1.jpg" alt=""></li>
+                    <li><img src="https://www.uniqlo.cn/hmall/test/u0000000013163/main/other2/1000/3.jpg" alt="" ></li>
+                </ul>
+            </div>
+            <span class="iconfont icon-jiantou9"> <a href="javascript:;" ></a></span>
+        </div>
     </div>
-    <div class="h-panel panel-center">
-        <form class="h-form label-top">
-            <div class="h-form-group h-clearfix">
-                <div>
-                    <div class="h-combo-box undefined ">
-                        <div tabindex="0" class="h-combo-box-editor">
-                            <div class="h-combo-box-editor-inner"><span></span><span
-                                    style="position: absolute; right: 24px;"></span></div>
-                        </div><i class="icon "></i><input type="hidden" name="countryCode" value="CN">
-                    </div>
-                </div>
-            </div>
-            <div class="h-form-group h-clearfix">
-                <div><span>
-                        <!-- react-text: 86 -->手机号
-                        <!-- /react-text --><span class="notice"></span></span>
-                    <div class="h-text-box default icon-left"><i class="icon left  icon-username"></i><input type="text"
-                            class="" name="mobilephone" placeholder="手机号" value="" autocomplete="off"></div>
-                </div>
-            </div>
-            <div class="h-form-group h-clearfix">
-                <div>
-                    <div style="display: block;"><span>
-                            <!-- react-text: 95 -->验证码
-                            <!-- /react-text --><span class="notice"></span></span></div>
-                    <div class="h-text-box default" style="width: 350px;"><input type="text" class="" name="code"
-                            placeholder="验证码" value="" autocomplete="off"></div><button type="button" disabled=""
-                        class="h-btn black undefined" style="width: 118px; height: 36px;">
-                        <!-- react-text: 100 -->获取验证码
-                        <!-- /react-text --></button>
-                </div>
-            </div>
-            <div class="h-form-group h-clearfix">
-                <div><i class="h-radio " style="margin-right: 5px;"><input type="radio" name="accept" value="N"></i>
-                    <p style="vertical-align: text-top;">
-                        <!-- react-text: 106 -->我已阅读并同意
-                        <!-- /react-text --><a href="/register-agreement.html" target="register-agreement">
-                            <!-- react-text: 108 -->《优衣库会员注册协议》
-                            <!-- /react-text --></a><!-- react-text: 109 -->和
-                        <!-- /react-text --><a href="/privacy_policy.html" target="privacy_policy">
-                            <!-- react-text: 111 -->《优衣库隐私政策》
-                            <!-- /react-text --></a></p>
-                </div>
-            </div>
-            <div class="h-form-group h-clearfix center">
-                <div><button type="submit" disabled="" class="h-btn black" style="height: 52px;">
-                        <!-- react-text: 115 -->注册
-                        <!-- /react-text --></button></div>
-            </div>
-        </form><!-- react-text: 116 -->
-        <!-- /react-text -->
+     <!-- 这是加购物车的结构 -->
+    <div class="goodsinfo-word">
+        <div class="p-name">
+            <a class="loadtitle" href="##"></a>
+        </div>
+        <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+        <div class="p-btn">
+            <input type="text" id="count" value="1" />
+            <a href="##">加入购物车</a>
+        </div>
     </div>
-    <!-- ------------尾部 -->
-    <div id="footer">
+     <!-- ------------尾部 -->
+     <div id="footer">
         <div class="footer-nav"><img src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif" alt="">
             <div class="footer-leftnav">
                 <h3><a href="javascripts:;">店铺资料</a></h3>
@@ -125,8 +112,10 @@
             </div>
         </div>
     </div>
-
-
+   
+    
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/details.js"></script>
 </body>
 
 </html>

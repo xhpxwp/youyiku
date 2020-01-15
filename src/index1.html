@@ -11,12 +11,14 @@
 
   <link rel="stylesheet" href="../src/stylesheets/index.css">
   <link rel="stylesheet" href="../src/fonts/iconfont.css">
+  
+
 
 </head>
 
 <body>
   <!-- ------------头部 ------------------>
-  <div id="top">
+  <div id="top" >
     <!-- 这是头部的注册登录搜索导航栏 -->
     <div class="top-main">
       <ul>
@@ -75,7 +77,25 @@
       <li><a href="javascripts:;">人气商品</a></li>
       <li><a href="javascripts:;">限时特优</a></li>
       <li><a href="javascripts:;">热门分类</a></li>
+      <li><a href="javascripts:;">穿搭推荐</a></li>
+      <li><a href="javascripts:;">特辑一览</a></li>
+      <li><a href="javascripts:;">合作系列</a></li>
+      <li><a href="javascripts:;">ut精选</a></li>
+      <li><a href="javascripts:;">热销排行</a></li>
+
+
+    </ul>
+
+  </div>
+   <!-- --------------楼梯 -->
+   <div id="louticopy">
+    <ul>
       <li><a href="javascripts:;">鸿运top榜</a></li>
+      <li><a href="javascripts:;">本周推荐</a></li>
+      <li><a href="javascripts:;">人气商品</a></li>
+      <li><a href="javascripts:;">限时特优</a></li>
+      <li><a href="javascripts:;">热门分类</a></li>
+      <li><a href="javascripts:;">穿搭推荐</a></li>
       <li><a href="javascripts:;">特辑一览</a></li>
       <li><a href="javascripts:;">合作系列</a></li>
       <li><a href="javascripts:;">ut精选</a></li>
@@ -89,20 +109,23 @@
   <div class="guanggao1"><img src="https://www.uniqlo.cn/cms/0acc657cb9ef90084c8d00046e87e3ef.jpg" alt=""></div>
   <!-- ------------轮播图 -->
   <div id="lunbo">
-    <ul>
+    <ul class=lunboul>
       <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/T2.jpg" alt=""></a>
       </li>
       <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/Urban-Walls-1280.jpg"
             alt=""></a></li>
       <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/T4.jpg" alt=""></a>
       </li>
-      <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/PC_L1.jp" alt=""></a>
+      <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2019/August/0816/PC_L1.jpg" alt=""></a>
       </li>
       <li><a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/T1.jpg" alt=""></a>
       </li>
 
 
     </ul>
+   
+  </div>
+  <div class="lunbobutton">
     <a href="javascripts:;">
       <div class="prev-button"></div>
     </a>
@@ -110,10 +133,11 @@
       <div class="next-button"></div>
     </a>
   </div>
+  
   <!-- ------------轮播图按钮 -->
   <div class="button">
     <ul>
-      <li></li>
+      <li class="active"></li>
       <li></li>
       <li></li>
       <li></li>
@@ -128,7 +152,7 @@
   <div class="guanggao3"><a href="javascripts:;"><img
         src="https://www.uniqlo.cn/cms/3e086e730ceba495e4db82fd94142f71.jpg" alt=""></a></div>
   <!-- ------------人气榜单 -->
-  <div id="rqbd">
+  <div id="rqbd" class="louceng">
     <ul>
       <li><a href="javascripts:;">女装</a></li>
       <li><a href="javascripts:;">男装</a></li>
@@ -174,7 +198,7 @@
     </ul>
   </div>
   <!-- ------------本周推荐 -->
-  <div id="tj">
+  <div id="tj" class="louceng">
     <p>本周推荐</p>
     <a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/recommend_A_1280.jpg"
         alt=""></a>
@@ -189,7 +213,7 @@
 
   </div>
   <!-- ------------人气商品 -->
-  <div id="rqsp">
+  <div id="rqsp" class="louceng">
     <p>人气商品</p>
     <a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/new_A_1280.jpg" alt=""
         class="rqspimg1"></a>
@@ -197,7 +221,7 @@
         class="rqspimg2"></a>
 
   </div>
-  <div id="xsty">
+  <div id="xsty" class="louceng">
     <p>限时特优</p>
     <a href="javascript:;"><img src="https://www.uniqlo.cn/public/image/L1/2020/January/0110/timelimit_A_1280.jpg"
         alt="" class="xstyimg1"></a>
@@ -213,10 +237,10 @@
   <div class="guanggao4"><a href="javascript:;"><img
         src="https://www.uniqlo.cn/public/image/L1/2019/November/1115/CZJX.jpg" alt=""></a></div>
   <!-- ------------热门商品分类 -->
-  <div id="rmsp">
+  <div id="rmsp" class="louceng">
     <p>热门商品分类</p>
     <ul>
-      <li><a href="javascript:;">WOMEN</a></li>
+      <li class="active" ><a href="javascript:;">WOMEN</a></li>
       <li><a href="javascript:;">MEN</a></li>
       <li><a href="javascript:;">KIDS</a></li>
       <li><a href="javascript:;">BABY</a></li>
@@ -232,14 +256,14 @@
 
   </div>
   <!-- ------------穿搭推荐 -->
-  <div id="cdtj">
+  <div id="cdtj" class="louceng">
     <p>穿搭推荐</p>
     <a href="javascript:;"><img src=" https://www.uniqlo.cn/public/image/L1/2020/January/0110/stylingbook_1280.jpg"
         alt="" class="cdtjimg"></a>
   </div>
 
   <!-- ------------特辑一览 -->
-  <div id="tjyl">
+  <div id="tjyl" class="louceng">
     <p>特辑一览</p>
     <a href="javascript:;"><img src="  https://www.uniqlo.cn/public/image/L1/2020/January/0110/features_A_1280.jpg"
         alt="" class="tjylimg1"></a>
@@ -249,7 +273,7 @@
 
   </div>
   <!-- ------------合作系列 -->
-  <div id="hz">
+  <div id="hz" class="louceng">
     <p>合作系列</p>
     <a href="javascript:;"><img src="     https://www.uniqlo.cn/public/image/L1/2020/January/0110/INES-PC1280.jpg"
         alt="" class="hzimg1"></a>
@@ -258,7 +282,7 @@
 
   </div>
   <!-- ------------ut系列 -->
-  <div id="utxl">
+  <div id="utxl" class="louceng">
     <p>ut系列</p>
     <a href="javascript:;"><img src="     https://www.uniqlo.cn/public/image/L1/2020/January/0110/ut_A_1280.jpg" alt=""
         class="utimg1"></a>
@@ -266,10 +290,10 @@
         class="utimg2"></a>
   </div>
   <!-- ------------热销排行的样式 -->
-  <div id="rxph">
+  <div id="rxph" class="louceng">
     <p>热销排行</p>
     <ul>
-      <li><a href="javascript:;">WOMEN</a></li>
+      <li class="active"><a href="javascript:;">WOMEN</a></li>
       <li><a href="javascript:;">MEN</a></li>
       <li><a href="javascript:;">KIDS</a></li>
       <li><a href="javascript:;">BABY</a></li>
@@ -330,7 +354,10 @@
   <!-- 回到顶部按钮 -->
   <div id="topbutton">回到顶部</div>
 
-  <script src="javascripts/lunbo.js"></script>
+  <!-- <script src="../src/javascripts/lunbo.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../src/javascripts/louti.js"></script>
+  <script src="../src/javascripts/tab.js"></script>
 </body>
 
 </html>
